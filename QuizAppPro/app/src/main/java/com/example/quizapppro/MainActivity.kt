@@ -1,19 +1,24 @@
 package com.example.quizapppro
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.service.autofill.Validators.not
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentActivity
 import androidx.room.Room
-import androidx.room.RoomDatabase
 import com.example.quizapppro.Modelo.Usuario
-import androidx.sqlite.db.SupportSQLiteDatabase
-import com.example.quizapppro.Modelo.Juego
 import com.example.quizapppro.persistency.UserEntity
 import com.example.quizapppro.persistency.UserRoomDatabase
+import com.google.android.gms.tasks.OnCompleteListener
+import com.google.android.gms.tasks.OnFailureListener
+import com.google.android.gms.tasks.OnSuccessListener
+import com.google.firebase.firestore.DocumentReference
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.QuerySnapshot
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,6 +27,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnIniciarSesion: Button
     private lateinit var btnRegistrar: Button
     private lateinit var btnBorrar: Button
+
+    private val TAG = "MainActivity"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,6 +39,7 @@ class MainActivity : AppCompatActivity() {
                 applicationContext,
                 UserRoomDatabase::class.java,
                 "database4.db").allowMainThreadQueries().build()
+        val db2 = FirebaseFirestore.getInstance()
 
 
         nombreUsuario = findViewById(R.id.user_editText)
@@ -75,7 +83,16 @@ class MainActivity : AppCompatActivity() {
         btnRegistrar.setOnClickListener{
             var usuario = nombreUsuario.text.toString()
             var password = passwordUsuario.text.toString()
-            var listaUsuarios = db.userDataDao().getUsers()
+            var listaUsuarios = db2.collection("users").get().addOnCompleteListener(
+                OnCompleteListener<QuerySnapshot> { task ->
+                if (task.isSuccessful) {
+                    for (document in task.result!!) {
+                        Log.d(TAG, document.id + " => " + document.data)
+                    }
+                } else {
+                    Log.d(TAG, "Error getting documents: ", task.exception)
+                }
+            })
 
             if((usuario.length == 0) or (password.length == 0))
             {
@@ -86,8 +103,31 @@ class MainActivity : AppCompatActivity() {
 
 
                 if (!Usuario.esPerfilRegistrado(listaUsuarios,usuario)) {
-                    var nuevoId = listaUsuarios.size+1
-                    db.userDataDao().insert(UserEntity(nuevoId,usuario, password))
+
+                    // Create a new user with a first and last name
+
+                    // Create a new user with a first and last name
+                    val user: MutableMap<String, Any> = HashMap()
+                    user["username"] = usuario
+                    user["password"] = password
+
+
+                    // Add a new document with a generated ID
+
+                    // Add a new document with a generated ID
+                    db.collection("users")
+                        .add(user)
+                        .addOnSuccessListener(OnSuccessListener<DocumentReference> { documentReference ->
+                            Log.d(TAG,
+                                "DocumentSnapshot added with ID: " + documentReference.id
+                            )
+                        })
+                        .addOnFailureListener(OnFailureListener { e ->
+                            Log.w(TAG,
+                                "Error adding document",
+                                e
+                            )
+                        })
                     Toast.makeText(this, "Usuario agregado", Toast.LENGTH_SHORT).show()
                 }
                 else{

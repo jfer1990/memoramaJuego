@@ -1,8 +1,7 @@
 package com.example.quizapppro.Modelo
 
 
-import com.example.quizapppro.persistency.UserDao
-import com.example.quizapppro.persistency.UserEntity
+
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -21,18 +20,18 @@ class Usuario(userName:String, juegoCurso : Juego): UserInterface {
         {
             TODO("Not yet implemented")
         }
-        fun esPerfilRegistrado(usersRegistered:List<UserEntity> ,userName: String): Boolean{
+        fun esPerfilRegistrado(usersRegistered:List<MutableMap<String, Any>> ,userName: String): Boolean{
             usersRegistered.forEach {
-                var currentUserName = it.userName
+                var currentUserName = it["username"].toString()
                 if (currentUserName.equals(userName))
                     return true
             }
             return false
         }
-        fun esUsuarioValido(usersRegistered:List<UserEntity> ,userName: String, password: String):Boolean{
+        fun esUsuarioValido(usersRegistered:List<MutableMap<String, Any>> ,userName: String, password: String):Boolean{
             usersRegistered.forEach {
-                var currentUserName = it.userName
-                var currentPassword = it.password
+                var currentUserName = it["username"].toString()
+                var currentPassword = it["password"].toString()
                 if (currentUserName.equals(userName) and currentPassword.equals(password))
                     return true
             }

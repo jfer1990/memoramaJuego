@@ -16,9 +16,7 @@ import android.widget.Toast
 
 import androidx.room.Room
 
-import com.example.quizapppro.persistency.JuegoEntity
 
-import com.example.quizapppro.persistency.UserRoomDatabase
 
 
 
@@ -83,7 +81,7 @@ class MenuActivity : AppCompatActivity() {
         btnJugar.setOnClickListener {
 
 
-
+        /*
             val intent = Intent(this, GameActivity::class.java).apply {
 
                 action=Intent.ACTION_SEND
@@ -95,6 +93,8 @@ class MenuActivity : AppCompatActivity() {
             }
 
             startActivity(intent)
+
+         */
 
         }
 

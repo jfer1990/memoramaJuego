@@ -4,11 +4,9 @@ import android.graphics.Path
 import org.json.JSONArray
 import java.util.*
 
-class Juego(opciones: Opciones,porcentaje:Int, numPregunta:Int) {
+class Juego(porcentaje:Int, numPregunta:Int) {
 
-    private var configuracionOpciones: Opciones = opciones
-        get() = field
-        set(opciones) {field=opciones}
+
 
     private var porcentajeActual:Int = porcentaje
         get() = field

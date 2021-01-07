@@ -11,7 +11,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MenuActivity"></activity>
         <activity android:name=".ScoreActivity" />
-        <activity android:name=".GameActivity" />
         <activity android:name=".OptionsActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
