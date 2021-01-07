@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QuizAppPro</string>
+    <string name="registrar_button">Are you new? Sign in</string>
+    <string name="login_button">Log in</string>
+    <string name="play_button">Play</string>
+    <string name="options_button">Options</string>
+    <string name="savedGames_button">Saved games</string>
+    <string name="changeUser_button">Change user</string>
+    <string name="todas_checkbox">All</string>
+    <string name="geo_checkbox">Geography</string>
+    <string name="cult_checkbox">General culture</string>
+    <string name="dep_checkbox">Sports</string>
+    <string name="arte_checkbox">Art and cinema</string>
+    <string name="tec_checkbox">Technology</string>
+    <string name="cat_checkbox">Random questions</string>
+    <string name="categoria_textView">Select your categories</string>
+    <string name="preguntas_textView">Select number of questions</string>
+    <string name="dificultad_textView">Select game dificulty</string>
+    <string name="baja_radiobutton">Low</string>
+    <string name="media_radiobutton">Medium</string>
+    <string name="alta_radiobutton">High</string>
+    <string name="pistas_switch">Activate/Desactivate hints</string>
+    <string name="gameOver_textView">Game over</string>
+    <string name="finalScore_textView">Final scure:</string>
+    <string name="playAgain_button">Play again</string>
+    <string name="returnMenu_button">Back to menu</string>
+    <string name="next_button">Next</string>
+    <string name="back_button">Back</string>
+    <string name="exitGame_button">Exit game</string>
+    <string name="deleteUser_button">Delete profile</string>
+    <string name="hitnUsuario">User name</string>
+    <string name="hitnContraseña">Password</string>
+</resources>

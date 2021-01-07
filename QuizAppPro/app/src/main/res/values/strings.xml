@@ -1,0 +1,418 @@
+<resources>
+    <string name="app_name">QuizAppPro</string>
+    <string name="registrar_button">¿Eres nuevo? Regístrate</string>
+    <string name="login_button">Iniciar sesión</string>
+    <string name="play_button">Jugar</string>
+    <string name="options_button">Opciones</string>
+    <string name="savedGames_button">Partidas guardadas</string>
+    <string name="changeUser_button">Cambiar de usuario</string>
+    <string name="todas_checkbox">Todas</string>
+    <string name="geo_checkbox">Geografía</string>
+    <string name="cult_checkbox">Cultura General</string>
+    <string name="dep_checkbox">Deportes</string>
+    <string name="arte_checkbox">Arte y Cine</string>
+    <string name="tec_checkbox">Tecnología</string>
+    <string name="cat_checkbox">Catafixia</string>
+    <string name="categoria_textView">Selecciona tus categorías</string>
+    <string name="preguntas_textView">Selecciona el número de preguntas</string>
+    <string name="dificultad_textView">Selecciona la dificultad del juego</string>
+    <string name="baja_radiobutton">Baja</string>
+    <string name="media_radiobutton">Media</string>
+    <string name="alta_radiobutton">Alta</string>
+    <string name="pistas_switch">Activar/Desactivar pistas</string>
+    <string name="gameOver_textView">Fin del juego</string>
+    <string name="finalScore_textView">Puntuación final:</string>
+    <string name="playAgain_button">Volver a jugar</string>
+    <string name="returnMenu_button">Volver al menú</string>
+    <string name="next_button">Siguiente</string>
+    <string name="back_button">Anterior</string>
+    <string name="exitGame_button">Salir del juego</string>
+    <string name="deleteUser_button">Eliminar perfil</string>
+    <string name="hitnUsuario">Nombre de usuario</string>
+    <string name="hitnContraseña">Contraseña</string>
+
+    <string-array name="geografia">
+        <item name="geo1">¿Qué es una isla?</item>
+        <item name="geo1a">Pequeña porción de tierra rodeada de agua</item>
+        <item name="geo1b">Pequeña porción de agua rodeada de tierra</item>
+        <item name="geo1c">Gran porción de tierra rodeada de agua</item>
+        <item name="geo1d">Gran extensión de agua</item>
+
+        <item name="geo2">¿Qué es un continente?</item>
+        <item name="geo2a">Porción muy extensa de tierra</item>
+        <item name="geo2b">Porción de tierra rodeada de agua</item>
+        <item name="geo2c">Porción de agua rodeada de tierra</item>
+        <item name="geo2d">Gran porción de agua</item>
+
+        <item name="geo3">¿Qué es un archipielgo?</item>
+        <item name="geo3a">Porciones pequeñas de tierra rodeadas de agua</item>
+        <item name="geo3b">Porciones pequeñas de agua rodeadas de tierra</item>
+        <item name="geo3c">Grandes porciones de tierra rodeadas de agua</item>
+        <item name="geo3d">Grandes porciones de agua rodeadas de tierra</item>
+
+        <item name="geo4">¿Qué es un lago?</item>
+        <item name="geo4a">Estancamiento de agua rodeado de tierra</item>
+        <item name="geo4b">Estancamiento de tierra rodeado de agua</item>
+        <item name="geo4c">Sección de tierra en el agua</item>
+        <item name="geo4d">Gran sección de tierra en el agua</item>
+
+        <item name="geo5">¿Cuál es la capital de Quintana Ro?</item>
+        <item name="geo5a">Chetumal</item>
+        <item name="geo5b">Cancún</item>
+        <item name="geo5c">Playa del Carmen</item>
+        <item name="geo5d">Tulum</item>
+
+        <item name="geo6">¿Cual es la capital de California?</item>
+        <item name="geo6a">Sacramento</item>
+        <item name="geo6b">Los Ángeles</item>
+        <item name="geo6c">San Francisco</item>
+        <item name="geo6d">San Diego</item>
+
+        <item name="geo7">¿Cómo se llama el paralelo que corta a la Tierra exactamente a la mitad?</item>
+        <item name="geo7a">Ecuador</item>
+        <item name="geo7b">Paralelo 38</item>
+        <item name="geo7c">Trópico de Cáncer</item>
+        <item name="geo7d">Trópico de Capricornio</item>
+
+        <item name="geo8">¿Cuántos continentes hay en la Tierra?</item>
+        <item name="geo8a">6</item>
+        <item name="geo8b">7</item>
+        <item name="geo8c">2</item>
+        <item name="geo8d">3</item>
+
+        <item name="geo9">¿Cuál es la capital de España?</item>
+        <item name="geo9a">Madrid</item>
+        <item name="geo9b">Barcelona</item>
+        <item name="geo9c">Catalunya</item>
+        <item name="geo9d">Lisboa</item>
+
+        <item name="geo10">¿Cuántos océanos hay en la Tierra?</item>
+        <item name="geo10a">4</item>
+        <item name="geo10b">5</item>
+        <item name="geo10c">2</item>
+        <item name="geo10d">3</item>
+
+    </string-array>
+
+    <string-array name="cultura">
+        <item name="cultura1">¿Cuál es la comida icónica de México?</item>
+        <item name="cultura1a">Tacos</item>
+        <item name="cultura1b">Mechado</item>
+        <item name="cultura1c">Pulque</item>
+        <item name="cultura1d">Hot-Cakes</item>
+
+        <item name="cultura2">¿Cuál es la capital de México?</item>
+        <item name="cultura2a">Ciudad de México</item>
+        <item name="cultura2b">Toluca</item>
+        <item name="cultura2c">San Miguel de Allende</item>
+        <item name="cultura2d">Mexicali</item>
+
+        <item name="cultura3">¿Cuál es el destino turístico más famoso de México?</item>
+        <item name="cultura3a">Riviera Maya</item>
+        <item name="cultura3b">Puerto Vallarta</item>
+        <item name="cultura3c">Mazatlán</item>
+        <item name="cultura3d">Los Cabos</item>
+
+        <item name="cultura4">¿Cuál es la comida típica de Yucatán?</item>
+        <item name="cultura4a">Cochinita Pibil</item>
+        <item name="cultura4b">Pozole</item>
+        <item name="cultura4c">Gorditas</item>
+        <item name="cultura4d">Mole</item>
+
+        <item name="cultura5">¿Quién es el Sol de México?</item>
+        <item name="cultura5a">Luis Miguel</item>
+        <item name="cultura5b">Angélica María</item>
+        <item name="cultura5c">Cristian Castro</item>
+        <item name="cultura5d">Pedro Infante</item>
+
+        <item name="cultura6">¿Quién es el actor de la edad de oro?</item>
+        <item name="cultura6a">Pedro Infante</item>
+        <item name="cultura6b">Silvia Pinal</item>
+        <item name="cultura6c">Arnoldo López Conejo</item>
+        <item name="cultura6d">Faisy</item>
+
+        <item name="cultura7">¿Qué pirámide es considerada maravilla del mundo moderno?</item>
+        <item name="cultura7a">Chichen Itzá</item>
+        <item name="cultura7b">Uxmal</item>
+        <item name="cultura7c">Teotihuacan</item>
+        <item name="cultura7d">Ek Balam</item>
+
+        <item name="cultura8">¿Cuál es el programa icónico de México?</item>
+        <item name="cultura8a">El Chavo del 8</item>
+        <item name="cultura8b">El Doctor Chapatín</item>
+        <item name="cultura8c">Me Caigo de Risa</item>
+        <item name="cultura8d">Una Familia de 10</item>
+
+        <item name="cultura9">¿Cuál es el baile típico de Yucatán?</item>
+        <item name="cultura9a">Jarana</item>
+        <item name="cultura9b">Tango</item>
+        <item name="cultura9c">Jarabe Tapatío</item>
+        <item name="cultura9d">Paso Doble</item>
+
+        <item name="cultura10">¿Cuándo es el día de la Independencia?</item>
+        <item name="cultura10a">15 de septiembre</item>
+        <item name="cultura10b">1 de enero</item>
+        <item name="cultura10c">24 de diciembre</item>
+        <item name="cultura10d">4 de julio</item>
+    </string-array>
+
+    <string-array name="deportes">
+        <item name="dep1">¿Qué nacionalidad es Javier "Chicharito" Hernández?</item>
+        <item name="dep1a">Mexicana</item>
+        <item name="dep1b">Estadounidense</item>
+        <item name="dep1c">Cubano</item>
+        <item name="dep1d">Brasileño</item>
+
+        <item name="dep2">¿Cuál es el equipo más ganador de la liga Italina?</item>
+        <item name="dep2a">Juventus</item>
+        <item name="dep2b">Divinus</item>
+        <item name="dep2c">Royalus</item>
+        <item name="dep2d">Magicius</item>
+
+        <item name="dep3">¿Cuál es el equipo más ganador de la liga inglesa?</item>
+        <item name="dep3a">Manchester United</item>
+        <item name="dep3b">NY Yankees</item>
+        <item name="dep3c">Aztecan Selection</item>
+        <item name="dep3d">United Kingdom Group</item>
+
+        <item name="dep4">¿Qué jugador es considerado el mejor jugador de la NBA?</item>
+        <item name="dep4a">Michael Jordan</item>
+        <item name="dep4b">Chicharito Hernandez</item>
+        <item name="dep4c">Michael Phelps</item>
+        <item name="dep4d">Donald Trump</item>
+
+        <item name="dep5">¿Cuál es el nombre del corredor que rompió récord de tiempo en el
+            mundial de atletismo y en los juegos olímpicos consecutivos?</item>
+        <item name="dep5a">Usain Bolt</item>
+        <item name="dep5b">Michael Jordan</item>
+        <item name="dep5c">Michael Phelps</item>
+        <item name="dep5d">Chicharito Hernandez</item>
+
+        <item name="dep6">¿En donde se celebrarán los Juegos Olímpicos?</item>
+        <item name="dep6a">Tokyo</item>
+        <item name="dep6b">Shangai</item>
+        <item name="dep6c">Hongkong</item>
+        <item name="dep6d">Pyonyang</item>
+
+        <item name="dep7">Es considerado el mejor quarter back en la historia de la NFL</item>
+        <item name="dep7a">Ronaldinho Gaucho</item>
+        <item name="dep7b">Lucciano Pavarotti</item>
+        <item name="dep7c">Michael Phelps</item>
+        <item name="dep7d">Payton Manning</item>
+
+        <item name="dep8">¿Quién es el mejor futbolista de todos los tiempos?</item>
+        <item name="dep8a">Ronaldinho Gaucho</item>
+        <item name="dep8b">Rafael Marquez</item>
+        <item name="dep8c">Enrrique Borja</item>
+        <item name="dep8d">Lionnel Mesi</item>
+
+        <item name="dep9">El tenista con más Grand Slam de la historia</item>
+        <item name="dep9a">Roger Federer</item>
+        <item name="dep9b">Michael Jordan</item>
+        <item name="dep9c">Michael Phelps</item>
+        <item name="dep9d">Payton Manning</item>
+
+        <item name="dep10">¿Quien fue campeón del Mundial 2018 en Rusia?</item>
+        <item name="dep10a">Francia</item>
+        <item name="dep10b">Argentina</item>
+        <item name="dep10c">Alemania</item>
+        <item name="dep10d">España</item>
+    </string-array>
+
+
+
+    <string-array name="tecnologia">
+        <item name="tech1">¿Quién es el creador de Apple?</item>
+        <item name="tech1a">Steve Jobs</item>
+        <item name="tech1b">Bill Gates</item>
+        <item name="tech1c">Larry Roberts</item>
+        <item name="tech1d">Larry Page</item>
+
+        <item name="tech2">¿Cuál es la versión más actualizada de Android?</item>
+        <item name="tech2a">10</item>
+        <item name="tech2b">9</item>
+        <item name="tech2c">11</item>
+        <item name="tech2d">9.5</item>
+
+        <item name="tech3">Primera empresa privada en hacer despegar un cohete hacia la Estación Espacial Internacional</item>
+        <item name="tech3a">SpaceX</item>
+        <item name="tech3b">Nasa</item>
+        <item name="tech3c">Universum</item>
+        <item name="tech3d">N31 Astronamics</item>
+
+        <item name="tech4">¿En que año se creó Facebook?</item>
+        <item name="tech4a">2004</item>
+        <item name="tech4b">2002</item>
+        <item name="tech4c">2020</item>
+        <item name="tech4d">2012</item>
+
+        <item name="tech5">¿Cuántos MB hay en 1GB?</item>
+        <item name="tech5a">1024MB</item>
+        <item name="tech5b">1000MB</item>
+        <item name="tech5c">1034MB</item>
+        <item name="tech5d">999MB</item>
+
+        <item name="tech6">¿Cuántos bits hay en 1TB?</item>
+        <item name="tech6a">8,589,934,592</item>
+        <item name="tech6b">8,589,934,700</item>
+        <item name="tech6c">7,589,934,592</item>
+        <item name="tech6d">589,904,102</item>
+
+        <item name="tech7">¿Cuál fue el primer navegador web?</item>
+        <item name="tech7a">Mosaic</item>
+        <item name="tech7b">Arpanet</item>
+        <item name="tech7c">Mozilla Firefox</item>
+        <item name="tech7d">Google Chrome</item>
+
+        <item name="tech8">Todas estas empresas son parte de Facebook, excepto:</item>
+        <item name="tech8a">LinkedIn</item>
+        <item name="tech8b">WhatsApp</item>
+        <item name="tech8c">Instagram</item>
+        <item name="tech8d">Twitter</item>
+
+        <item name="tech9">¿Cuándo se fundó Microsoft?</item>
+        <item name="tech9a">1975</item>
+        <item name="tech9b">1940</item>
+        <item name="tech9c">1870</item>
+        <item name="tech9d">1990</item>
+
+        <item name="tech10">¿Cuál es la compañía que lanzó el primer celular con pantalla táctil?</item>
+        <item name="tech10a">LG</item>
+        <item name="tech10b">Samsung</item>
+        <item name="tech10c">Sony</item>
+        <item name="tech10d">Apple</item>
+
+    </string-array>
+
+    <string-array name="arte">
+        <item name="arte1">Número de oscares ganados en la película Titanic</item>
+        <item name="arte1a">12</item>
+        <item name="arte1b">11</item>
+        <item name="arte1c">10</item>
+        <item name="arte1d">13</item>
+
+        <item name="arte2">¿Cuál es la compañía de entretenimiento más famosa en el mundo?</item>
+        <item name="arte2a">Cirque du Soleil</item>
+        <item name="arte2b">Franco Dragone</item>
+        <item name="arte2c">Circo Atayde</item>
+        <item name="arte2d">Circo Zaragoza</item>
+
+        <item name="arte3">¿Quién es el autor de la Gioconda?</item>
+        <item name="arte3a">Leonardo DaVinci</item>
+        <item name="arte3b">Miguel Angel</item>
+        <item name="arte3c">Frida Khalo</item>
+        <item name="arte3d">Pablo Picasso</item>
+
+        <item name="arte4">¿Quién es es director de Avatar?</item>
+        <item name="arte4a">James Cameron</item>
+        <item name="arte4b">Alfonso Quaron</item>
+        <item name="arte4c">Will Smith</item>
+        <item name="arte4d">Diego de Luna</item>
+
+        <item name="arte5">¿Quién pintó la Capilla Sixtina?</item>
+        <item name="arte5a">Miguel Angel</item>
+        <item name="arte5b">Leonardo DaVinci</item>
+        <item name="arte5c">Pablo Picasso</item>
+        <item name="arte5d">Frida Khalo</item>
+
+        <item name="arte6">¿Quién interpretó a Indiana Jones?</item>
+        <item name="arte6a">Harrison Ford</item>
+        <item name="arte6b">Tom Cruise</item>
+        <item name="arte6c">Leonardo Dicaprio</item>
+        <item name="arte6d">Criss Pratt</item>
+
+        <item name="arte7">¿Cuál es el nombre verdadero de Voldemort?</item>
+        <item name="arte7a">Tom Marvolo Riddle</item>
+        <item name="arte7b">Petter Petigrew</item>
+        <item name="arte7c">Lucius Marvolo Riddle</item>
+        <item name="arte7d">Ron Marvolo Wisley</item>
+
+        <item name="arte8">¿Cuál es la mejor película animada?</item>
+        <item name="arte8a">Spiderman (Un nuevo universo)</item>
+        <item name="arte8b">Zootopia</item>
+        <item name="arte8c">Toy Story 3</item>
+        <item name="arte8d">Sing</item>
+
+        <item name="arte9">En la saga del Señor de los Anillos ¿Cuántos anillos de poder habían?</item>
+        <item name="arte9a">20</item>
+        <item name="arte9b">19</item>
+        <item name="arte9c">21</item>
+        <item name="arte9d">25</item>
+
+        <item name="arte10">¿Quién pintó la Noche Estrellada?</item>
+        <item name="arte10a">Van Gogh</item>
+        <item name="arte10b">Miguel Angel</item>
+        <item name="arte10c">Pablo Picasso</item>
+        <item name="arte10d">Leonardo DaVinci</item>
+
+    </string-array>
+
+    <string-array name="catafixia">
+        <item name="cat1">¿Cuál es el animal que come piedras y puede volar?</item>
+        <item name="cat1a">El come piedras volador</item>
+        <item name="cat1b">La vaca sin cola vestida de uniforme</item>
+        <item name="cat1c">La kalaka de marmol voladora</item>
+        <item name="cat1d">La piedra voladora del desierto</item>
+
+        <item name="cat2">¿Cuál es la personalidad más antigua?</item>
+        <item name="cat2a">Chabelo</item>
+        <item name="cat2b">Silvia Pinal</item>
+        <item name="cat2c">Arnoldo López Conejo</item>
+        <item name="cat2d">Angélica María</item>
+
+        <item name="cat3">Desde que la reina Isabel ascendió al trono, ¿Cuántas generaciones
+            ha perdido derecho al trono de Inglaterra?</item>
+        <item name="cat3a">2</item>
+        <item name="cat3b">3</item>
+        <item name="cat3c">1</item>
+        <item name="cat3d">Ninguna</item>
+
+        <item name="cat4">Es considerado el jefe más difícil en Mortal Kombat 1</item>
+        <item name="cat4a">Sub-Zero</item>
+        <item name="cat4b">Lance</item>
+        <item name="cat4c">No Face</item>
+        <item name="cat4d">Shadow Priest</item>
+
+        <item name="cat5">¿En qué región ocurren los eventos narrados del cuento de La Sirenita?</item>
+        <item name="cat5a">Dinamarca</item>
+        <item name="cat5b">Irlanda</item>
+        <item name="cat5c">Singapur</item>
+        <item name="cat5d">Normandía</item>
+
+        <item name="cat6">En el siglo XXI Se ha producido una tendencia de cambiar la raza de
+            algunos personajes en medios escritos, a medios visuales, ¿Qué sector de la poclación
+            se ha visto más afectado?</item>
+        <item name="cat6a">Pelirrojos</item>
+        <item name="cat6b">Rubios</item>
+        <item name="cat6c">Morenos</item>
+        <item name="cat6d">Blancos</item>
+
+        <item name="cat7">Estas en una habitación oscura y tienes una vela, un cerillo y una
+            linterna ¿Qué enciendes primero?</item>
+        <item name="cat7a">La luz</item>
+        <item name="cat7b">La vela</item>
+        <item name="cat7c">El cerillo</item>
+        <item name="cat7d">La linterna</item>
+
+        <item name="cat8">¿Dónde fue asesinado Abraham Lincoln?</item>
+        <item name="cat8a">Teatro Ford</item>
+        <item name="cat8b">Radio Music City Hall</item>
+        <item name="cat8c">Broadway Theater</item>
+        <item name="cat8d">Teatro Metropolitan</item>
+
+        <item name="cat9">Estás durmiento y tu familia viene y trae unos dulces, unas papas y
+            un refresco ¿Qué abres primnero?</item>
+        <item name="cat9a">Los ojos</item>
+        <item name="cat9b">Los dulces</item>
+        <item name="cat9c">Las papas</item>
+        <item name="cat9d">El refresco</item>
+
+        <item name="cat10">Nombre completo del profesor Dumbledore:</item>
+        <item name="cat10a">Albus Percival Wulfric Brian Dumbledore</item>
+        <item name="cat10b">Albus Percival Brian Wulfric Dumbledore</item>
+        <item name="cat10c">Albus Wulfric Brian Dumbledore</item>
+        <item name="cat10d">Albus Brian Percival Wulfric Dumbledore</item>
+
+    </string-array>
+
+</resources>
