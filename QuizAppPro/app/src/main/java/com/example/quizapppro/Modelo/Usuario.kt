@@ -2,7 +2,8 @@ package com.example.quizapppro.Modelo
 
 
 
-import java.util.*
+import com.google.android.gms.tasks.Task
+import com.google.firebase.firestore.QuerySnapshot
 import kotlin.collections.ArrayList
 
 
@@ -20,13 +21,16 @@ class Usuario(userName:String, juegoCurso : Juego): UserInterface {
         {
             TODO("Not yet implemented")
         }
-        fun esPerfilRegistrado(usersRegistered:List<MutableMap<String, Any>> ,userName: String): Boolean{
-            usersRegistered.forEach {
+        fun esPerfilRegistrado(usersRegistered: Task<QuerySnapshot>, userName: String): Boolean{
+            /*usersRegistered.forEach {
                 var currentUserName = it["username"].toString()
                 if (currentUserName.equals(userName))
                     return true
             }
             return false
+
+             */
+            TODO()
         }
         fun esUsuarioValido(usersRegistered:List<MutableMap<String, Any>> ,userName: String, password: String):Boolean{
             usersRegistered.forEach {

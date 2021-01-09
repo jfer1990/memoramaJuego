@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "708629491228",
+    "project_id": "memoramadatabase-f5a04",
+    "storage_bucket": "memoramadatabase-f5a04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708629491228:android:ff8039685ff47717f9b9d9",
+        "android_client_info": {
+          "package_name": "com.example.quizapppro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708629491228-r702mr4u7o0j2rcko4apql88rd0imr23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDflbdalXkrwIpok02rKowe5bOxfrcukoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708629491228-r702mr4u7o0j2rcko4apql88rd0imr23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
